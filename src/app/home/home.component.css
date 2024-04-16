@@ -12,7 +12,7 @@
 .box1{
     z-index: 1;
     position: absolute;
-    top:57%;
+    top:20%;
     left:32.5%;
     height: 280px;
     width: 20%;
@@ -21,7 +21,7 @@
 }
 
 .box2{
-    background-image: url(../../assets/pic2.jpg);
+    background-image: url("../../assets/pic2.jpg");
     background-size: 100%;
     margin: 0 auto;
     height: 250px;
@@ -104,29 +104,64 @@ small{
 
 @media screen  and (max-width:1100px){
     .box1{
-        top:53%;
+        top:16%;
+    }
+    
+    .contain{
+        padding-top: 30%;
     }
     
 }
 
-@media screen and (max-width:950px) {
+@media screen and (max-width:550px) {
+    .box{
+        margin: 0 auto;
+        top:5%;
+        left:12%;
+    }
     .box1{
-        top:33%
+            top:10%;
+            left:5.5%;
+            height: 220px;
+            width: 45%;
+            border: 5px solid black;
+            padding-top: 2%;
+        
     }
     
 }
 
-@media screen and (max-width:710px) {
-    .box1{
+@media screen and (max-width:770px) {
+    .box{
         height: 250px;
-        top:25%
+        width:70%;
+        margin: 0 auto;
+    }
+    .box1{
+        height:220px;
+         top:12%;
+        left:42.5%;
+        width: 35%;
+        border: 5px solid black;
+        padding-top: 2%;
+        margin: 0 auto;
+        
+        
+    }
+    .box2{
+        height: 200px;
     }
     .contain{
         flex-direction: column;
     }
     .box3{
         position: relative;
-        top:40%;
+        top:10%;
+        height: 200px;
+         width:70%;
+            margin:0 auto;
+        
+        
     }
 }
 
@@ -136,4 +171,46 @@ small{
     }
     
 }
+
+@media screen and (max-width:430px){
+   .box{
+    height: 180px;
+    width:100%;
+    position: relative;
+    top:50px;
+    margin: 0 auto;
+   }
+   .box1{
+    top:10%;
+    left:15.5%;
+    height: 220px;
+    width: 50%;
+    border: 5px solid black;
+    padding-top: 2%;
+}
+.box2{
+    height: 200px;
+}
+.box3{
+    height: 200px;
+    width:100%;
+    margin:0% 2%;
+    top: 20%;
+}
+
+
+
+}
+@media screen and (max-width:830px) {
+    .box1{
+        top:16%;
+    }
+    .contain{
+       padding-top: 30%;
+    }
+    
+    
+}
+
+
 

@@ -1,41 +1,28 @@
 <div class="contain">
- <div class="container-fluid colour">
-    <div style="height: 1080px;width: 20%;" >
-        <div  class="container-fluid pt-40"   style="height:650px;width:90%;margin:0 auto;" >
-            <br><br><br><br><br> <br>
-            <div class="top">ARCHANA H</div>
-            <br><br>
-            <div style="height:3px;width:100%;background-color: black;"></div>
-            <br><br><br>
-            <div class="tab">
-              <h3  (click)="changingstyle('tag1')"[ngClass]="{'highlighted':div1clicked}" class="heading">HOME</h3>
-              <h3  (click)="changingstyle('tag2')" [ngClass]="{'highlighted':div2clicked}" class="heading">PORTFOLIO</h3>
-              <h3  (click)="changingstyle('tag3')" [ngClass]="{'highlighted':div3clicked}" class="heading">CONTACT</h3>
-          </div>
-            <br><br><br>
-            <div style="height:3px;width:95%;margin:0 auto;background-color: black;"></div>
-            <br><br><br>
-            <div class="boxes">
-              <div class="box fa fa-twitter"></div>
-              <div class="box fa fa-facebook"></div>
-              <div class="box fa fa-instagram"></div>
-              <div class="box fa fa-youtube"></div>
-              <div class="box fa fa-linkedin"></div>
-            </div>
-            <br>
-            <div class="box2"><small><b>2024</b> Lorem ipsum dolor sit </small></div>
-        </div>
-        <div style="height:3px;width:95%;margin:0 auto;background-color: black;"></div>
-        <br><br><br>
-        <div style="height: 400px;width:90%;margin:0 auto;display: flex;">
-            <div class="picbox">
-            <div class="test"><b style="font-size: 28px;">Skills</b><ol><li>Creativity</li><li>Website Management</li><li>Team Work</li><li>Project Management</li></ol></div> 
-           </div>  
-
-        </div>
+  <div class="container-fluid colour">
+    <div class="dropdown">
+        <h3  (click)="changingstyle('tag1')"[ngClass]="{'highlighted':div1clicked}" class="heading">HOME</h3>
+        <h3  (click)="changingstyle('tag2')" [ngClass]="{'highlighted':div2clicked}" class="heading">PORTFOLIO</h3>
+        <h3  (click)="changingstyle('tag3')" [ngClass]="{'highlighted':div3clicked}" class="heading">CONTACT</h3>
     </div>
-   <div class="line"></div> 
-    <div style="height: 1080px;width: 80%;" >
+
+    <div class="horzintal">
+    <div  class="hor" >
+      <div  class="container-fluid pt-40"   style="height:650px;width:90%;margin:0 auto;" >
+        <br><br><br><br><br> <br>
+          <div class="top">ARCHANA H</div>
+           <br><br>
+          <div style="height:3px;width:100%;background-color: black;"></div>
+           <br><br><br>
+          <div class="tab">
+            <h3  (click)="changingstyle('tag1')"[ngClass]="{'highlighted':div1clicked}" class="heading">HOME</h3>
+            <h3  (click)="changingstyle('tag2')" [ngClass]="{'highlighted':div2clicked}" class="heading">PORTFOLIO</h3>
+            <h3  (click)="changingstyle('tag3')" [ngClass]="{'highlighted':div3clicked}" class="heading">CONTACT</h3>
+          </div>
+      </div>
+    </div>
+    <div class="line"></div> 
+    <div style="height: 700px;width: 80%;" >
       <div *ngIf="activeTag==='tag1'" >
         <app-home></app-home>
       </div>
@@ -44,22 +31,19 @@
       </div>
       <div *ngIf="activeTag==='tag3'">
         <app-contact></app-contact></div>
- </div>
-</div> 
-
-
- <!-- <div class="pattern-container">
-    <div *ngFor="let row of [1, 2, 3, 4, 5]" class="row">
-      <span *ngFor="let num of getNumbers(row)" class="number">{{ num }}</span>
     </div>
+    </div>
+    <footer>
+      <p>Archana Raju</p>
+      <p>For more such templates follow us on:</p>
+      <div class="social">
+        <a href=""><i class="fab fa-facebook-f">f</i></a>
+        <a href=""><i class="fab fa-instagram">i</i></a>
+        <a href=""><i class="fab fa-dribble">d</i></a>
+        <a href=""><i class="fab fa-youtube">U</i></a>
+        <a href=""><i class="fab fa-twitter">T</i></a>
+      </div>
+      <p class="end">CopyRight &copy; By Archanaraju</p>
+    </footer>
   </div>
- 
-<button (click)="getstars(5)">star</button>
-
-
-<button (click)="getStars(5)">Generate Pyramid</button>
-
-<button (click)="generatePattern(5)">Generate triangle</button>
-
-
-<button (click)="generatediamond(5)">Diamond</button>  -->
+</div>

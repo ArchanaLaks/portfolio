@@ -1,6 +1,7 @@
 .service{
 	width: 77%;
 	padding: 100px;
+	padding-top:30px ;
     margin-left: 5%;
 
 }
@@ -99,4 +100,56 @@ margin-bottom: 25px;
     .para p{
         font-size: 12px;
     }
+	.card{
+		height: 200px;
+		width: 100%;
+		padding: 0px 35px;
+		position: relative;
+		overflow: scroll;
+		margin-left: 35%;
+	}
+
+}
+
+@media screen and (max-width:430px){
+	.title h2{
+		font-size: 15px;
+		width: 100% ;
+		margin: 0 auto;
+	}
+	.card{
+		height: 200px;
+		width: 100%;
+		padding: 0px 35px;
+		position: relative;
+		overflow: scroll;
+		margin-left: 30%;
+	}
+	
+	
+}
+
+@media screen and (max-width:830px){
+	.title h2{
+		font-size: 45px;
+		width: 100% ;
+		margin: 0 auto;
+	}
+
+	.service{
+		padding: 30px;
+		padding-top:50px ;
+		margin-left: 2%;
+	
+	}
+
+}
+@media screen and (max-width:430px){
+	.title h2{
+		font-size: 15px;
+	}
+	.card{
+		height: 230px;
+		margin-left: 20%;
+	}
 }
